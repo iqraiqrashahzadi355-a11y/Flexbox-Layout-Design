@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment-8</title>
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.border{
+    border:2px solid black;
+    margin:2px;
+}
+.border--red{
+    border-color:red;
+}
+.box{
+    padding:5px;
+}
+.flex{
+    display:flex;
+}
+.flex--row{
+    flex-direction:row;
+}
+.flex--column{
+    flex-direction:column;
+}
+.main{
+    display:flex;
+    flex-direction:column;
+}
+.Navbar{
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    height:70vh;
+    gap:8px;
+}
+.Content{
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    height:70vh;
+    gap:10px;
+}
+.nav-item:nth-child(1){ flex:5; }
+.nav-item:nth-child(2){ flex:1; }
+.nav-item:nth-child(3){ flex:1; }
+.nav-item:nth-child(4){ flex:2; }
+.nav-item:nth-child(5){ flex:1; }
+.content-row:nth-child(1){
+    flex:2;
+}
+.content-row:nth-child(2),
+.content-row:nth-child(3){
+    flex:4;
+}
+.top-blue{
+    display:flex;
+    gap:10px;
+}
+.top-blue .blue-box{
+    flex:1;
+    border:2px solid blue;
+}
+.middle-row{
+    display:flex;
+    gap:10px;
+}
+.blue-left{
+    width:70%;
+    border:2px solid blue;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:5px;
+}
+.blue-right{
+    width:30%;
+    border:2px solid blue;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:5px;
+    align-items:flex-end;
+}
+.green-box{
+    flex:1; 
+    border:2px solid green;
+    width:100%;
+}
+.blue-right .green-box:first-child{
+    width:50%;
+}
+</style>
+</head>
+<body>
+<div class="border main flex--column">
+    <div class="border border--red box"></div>
+    <div class="border border--red box"></div>
+</div>
+<div class="flex flex--row">    
+    <div class="Navbar border box">
+        <div class="nav-item border border--red box"></div>
+        <div class="nav-item border border--red box"></div>
+        <div class="nav-item border border--red box"></div>
+        <div class="nav-item border border--red box"></div>
+        <div class="nav-item border border--red box"></div>
+    </div>
+    <div class="Content border box">   
+        <div class="content-row border border--red box top-blue">
+            <div class="blue-box"></div>
+            <div class="blue-box"></div>
+            <div class="blue-box"></div>
+            <div class="blue-box"></div>
+        </div>
+        <div class="content-row border border--red box middle-row">
+            <div class="blue-left">
+                <div class="green-box"></div>
+                <div class="green-box"></div>
+                <div class="green-box"></div>
+            </div>
+            <div class="blue-right">
+                <div class="green-box"></div>
+                <div class="green-box"></div>
+            </div>
+        </div>
+        <div class="content-row border border--red box middle-row">
+            <div class="blue-left">
+                <div class="green-box"></div>
+                <div class="green-box"></div>
+                <div class="green-box"></div>
+            </div>
+            <div class="blue-right">
+                <div class="green-box"></div>
+                <div class="green-box"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
