@@ -60,13 +60,7 @@ Each row contains:
 
 ## 📸 Layout Preview
 
-(You can add a screenshot here if required)
-
-To add image in README:
-
-![Project Preview](screenshot.png)
-
-Make sure screenshot.png is inside your repository folder.
+![Project Preview](https://github.com/iqraiqrashahzadi355-a11y/Flexbox-Layout-Design/blob/9df5db713b45c5ce0cd6a4dab1318ed1813f9e8d/Flexbox-Layout-Design.png)
 
 ## 🚀 How to Run
 
